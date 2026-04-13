@@ -23,10 +23,10 @@ spec:
       requiredDuringSchedulingIgnoredDuringExecution:
       - labelSelector:
           matchExpressions:
-          - key: security
+          - key: tier
             operator: In
             values:
-            - S1
+            - database
         topologyKey: topology.kubernetes.io/zone
    containers: 
    - name: nginx
